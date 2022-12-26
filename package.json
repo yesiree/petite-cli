@@ -1,0 +1,28 @@
+{
+  "name": "@yesiree/petite-cli",
+  "version": "0.0.1",
+  "description": "A tiny little framework (TLF) for building CLI applications.",
+  "author": "Trevor Reed",
+  "license": "MIT",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "npx @vercel/ncc build src/index.js -m --license LICENSE",
+    "stats": "npx webpack-bundle-analyzer stats.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ajv": "^8.11.2",
+    "chalk": "^5.1.2",
+    "listr2": "^5.0.6",
+    "prompts": "^2.4.2"
+  },
+  "homepage": "https://github.com/yesiree/petite-cli#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yesiree/petite-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yesiree/petite-cli/issues"
+  }
+}
